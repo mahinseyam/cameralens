@@ -1,147 +1,143 @@
 📸 Camera Lens
 A 2D Social Media Influence Simulation Game (OCR A-Level Computer Science NEA)
-
-Camera Lens is a 2D sketch-style narrative game where the player uses an in-game phone camera to capture moments around a college environment.
-Every photo you take influences NPC behaviour, triggers events, and branches the story toward different endings — showing how selective media can shape perception, trends, and “clout culture.”
-
-Inspired by We Become What We Behold, this project expands the idea into a realistic school setting with dynamic NPCs, event-driven storytelling, and social-media-themed mechanics.
-
-🎯 Features
-📷 Interactive Camera System
+<p align="center"> A narrative-driven browser game exploring how selective photography shapes perception, behaviour, and “clout culture.” </p>
+<h2>🎯 Features</h2>
+<h3>📷 Interactive Camera System</h3>
 
 Zoom, pan, and capture gameplay events
 
 Flash animation + colour feedback (green = success, red = error)
 
-Each capture broadcasts an event into the game world
+Every photo broadcasts an event into the world
 
-🧍 Dynamic NPC Behaviour (FSM)
+<h3>🧍 Dynamic NPC Behaviour (Finite State Machines)</h3>
 
-NPCs follow finite state patterns (Idle → Patrol → React)
+NPC patterns: Idle → Patrol → React
 
-Behaviour changes based on what the player photographs
+Behaviour shifts only when the player captures specific events
 
-Designed using Finite State Machines for clarity and modularity
+Clean, modular FSM structure
 
-🔀 Branching Narrative
+<h3>🔀 Branching Narrative</h3>
 
-Multiple storyline outcomes (e.g., Detention, School Fight, Safe Path)
+Multiple endings (Detention / School Fight / Safe Path)
 
 JSON-based narrative graph
 
-Replayable — different photos lead to different consequences
+Replayable choices that alter the storyline
 
-🎨 Minimal Sketch Aesthetic
+<h3>🎨 Sketch-Style Aesthetic</h3>
 
-Lightweight 2D hand-drawn style
+Lightweight hand-drawn assets
 
-Clean interface to focus on choices & consequences
+Minimal distractions to focus on choices
 
-Fast browser performance
+Browser-friendly performance
 
-🔊 Audio & Accessibility
+<h3>🔊 Sound & Accessibility</h3>
 
-Volume sliders (Master / Music / SFX)
+Master / Music / SFX sliders
 
-Sound reacts to events
+Event-based SFX + ambient reactions
 
-Accessible UI feedback and clear structure
+Accessible UI feedback
 
-📱 In-Game Photo Gallery
+<h3>📱 In-Game Photo Gallery</h3>
 
 Stores all captured photos
 
-Lets players reflect on what they chose to highlight
+Shows history of player decisions
 
-Core to the game’s message about selective media
+Reinforces the game’s media-literacy theme
 
-🧩 Technical Architecture
+<h2>🧩 Technical Architecture</h2>
+<h3>📦 Modular, Event-Driven Architecture</h3>
 
-Camera Lens uses a modular, event-driven architecture:
+Main Game UI — initialization + loop
 
-Main Game UI – Game loop & initialization
+Camera Module — capture, zoom, UI states
 
-Camera Module – Capture mechanics, zoom, UI states
+NPC Module — FSM behaviour transitions
 
-NPC Module – FSM-based NPC behaviour
+Game State Manager — event triggers + branching
 
-Game State Manager – Event triggers & narrative branching
+UI Module — camera button, menus, gallery
 
-UI Module – Menus, gallery, buttons, on-screen feedback
+Sound Module — background music + SFX
 
-Sound Module – Music, SFX, volume sliders
-
-🧠 Key Computational Techniques
+<h3>🧠 Computational Techniques</h3>
 
 Abstraction & decomposition
 
 Event-driven programming
 
-Observer pattern
+Observer Pattern
 
-Finite State Machines (FSMs) for NPCs
+FSMs for NPC behaviour
 
-JSON-driven narrative graph
+JSON narrative graph
 
-Modular system design for maintainability
+Modularised structure for maintainability
 
-🛠️ Tech Stack
+<h2>🛠️ Tech Stack</h2>
 
 JavaScript
 
-PixiJS (2D rendering)
+PixiJS (2D rendering engine)
 
 HTML5 + CSS3
 
-JSON for events, config, and narrative
+JSON for narrative/data storage
 
 VS Code
 
-Git for version control
+Git for version management
 
-🧪 Testing Strategy
-✔️ Iterative Development Testing
+<h2>🧪 Testing Strategy</h2>
+<h3>Iterative Testing</h3>
 
-Zoom boundaries
+Camera zoom limits
 
-Rapid photo captures
+High-frequency photo capture
 
-NPC state transitions
+NPC movement/behaviour transitions
 
-UI component consistency
+UI responsiveness
 
-Triggering and handling invalid / missing events
+Event ordering & unexpected inputs
 
-✔️ Post-Development Testing
+<h3>Post-Development Testing</h3>
 
 Stress testing
 
-Save data integrity
+Save-data integrity
 
-Usability testing with external users
+Usability testing with users
 
-Full evaluation against SMART criteria
+Evaluation against SMART success criteria
 
-🎓 Educational Purpose
+<h2>🎓 Educational Purpose</h2>
 
-Camera Lens is designed not just as a game, but as a lesson in media literacy.
-It helps players understand how:
+Camera Lens is designed as a media-literacy tool.
+It demonstrates how:
 
 selective photography
 
-trending behaviour
+attention-driven trends
+
+narrative framing
 
 and digital influence
 
-shape real-world narratives.
+shape public perception in real life.
 
-Ideal for students, educators, and discussions around social media psychology.
+Perfect for students, educators, and discussions on social media psychology.
 
-🚀 Status
+<h2>🚀 Project Status</h2>
 
-This project is part of my OCR A-Level Computer Science NEA.
-Improvements, extra endings, and more features may be added in future iterations.
+This project was developed as part of my OCR A-Level Computer Science NEA.
+Further improvements and extended endings may be added after submission.
 
-📬 Contact
+<h2>📬 Contact</h2>
 
-For feedback, suggestions, or collaboration, feel free to reach out.
+If you’d like to collaborate, give feedback, or ask about the project — feel free to reach out.
